@@ -1,4 +1,4 @@
-"""import string
+"""
 A simple model demo API
 
 The API predicts the language of a text using a pre-trained model
@@ -21,6 +21,7 @@ class TextIn(BaseModel):
 class PredictionOut(BaseModel):
     language: str
 
+
 @app.get("/", response_class=HTMLResponse)
 def read_demo():
     """
@@ -35,7 +36,7 @@ def read_demo():
 @app.get("/info")
 def home():
     """
-    Returns basic information about the api
+    Generates basic information about the api
     
     :return: a JSON with healthcheck string and current model version 
     """
