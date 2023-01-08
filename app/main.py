@@ -80,12 +80,13 @@ def generate_html_response():
             <title>Simple demo-api</title>
         </head>
         <body>
-            <h1>Simple demo-api: Predict language of text 
-                <form action="/submit" method="post">
-                    <label for="Text">Text to predict:</label><br>
-                    <input type="text" id="text" name="text">
-                    <input type="submit" value="Predict language">
-                </form>	
+            <h1>Simple demo-api</h1>
+                <h2>Predicts  the language of a text</h2> 
+                    <form action="/submit" method="post">
+                        <label for="Text">Text to predict:</label><br>
+                        <input type="text" id="text" name="text">
+                        <input type="submit" value="Predict language">
+                    </form>	
         </body>
     </html>
     """
